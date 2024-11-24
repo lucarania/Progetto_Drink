@@ -1,0 +1,195 @@
+/* variabili */
+:root {
+  --backgroundColor: #230312;
+  --headerBackgroundColor: #3c0820;
+  --textColor: rgb(232, 229, 229);
+}
+
+/* formattazione generale */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--backgroundColor);
+  margin: 0 20px;
+  color: var(--textColor);
+  position: relative;
+  overflow: auto;
+}
+/* header */
+header {
+  background-color: var(--headerBackgroundColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 0 0 10px 10px;
+}
+#title img {
+  width: 400px;
+  height: auto;
+}
+nav button,
+nav input,
+#ricercaCocktail input {
+  border: none;
+  border-bottom: 2px solid grey;
+  padding: 5px 10px;
+  margin: 20px;
+  background-color: transparent;
+  color: var(--textColor);
+  font-size: medium;
+}
+input::placeholder {
+  color: var(--textColor);
+}
+/* main */
+/* presentazione */
+#presentazione {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  text-align: center;
+}
+#presentazione > img {
+  height: 200px;
+}
+/* scritte di presentazione */
+#scrittePresentazione {
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#scrittePresentazione h1 {
+  font-size: xx-large;
+}
+#scrittePresentazione button {
+  border-radius: 10px;
+  padding: 5px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* totali */
+#ricercaCocktail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+hr {
+  width: 600px;
+  border: dashed 1px gray;
+}
+#totali {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#totali p {
+  margin-right: 20px;
+}
+/* drink */
+#drink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+#drinkContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+#drinkContainer img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* css card */
+#cardContainer {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#card {
+  width: 80%;
+  height: 80%;
+  background-color: var(--headerBackgroundColor);
+  border-radius: 20px;
+  opacity: 0.95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#cardLeft {
+  flex: 1;
+  height: 100%;
+}
+#cardLeft img {
+  width: 350px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+#cardRight {
+  flex: 2;
+  height: 100%;
+}
+#cardRight button {
+  border: none;
+  border-radius: 10px;
+  background-color: var(--backgroundColor);
+  width: 50px;
+  height: 50px;
+  font-size: xx-large;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: var(--textColor);
+}
+#card > div {
+  padding: 50px;
+}
+#cardIngredienti {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#cardRicetta {
+  margin-top: 20px;
+  text-align: center;
+}
+.cardIngrediente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cardIngrediente img {
+  width: 130px;
+}

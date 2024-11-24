@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktail</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header con titolo e navbar -->
+    <header>
+      <div id="title">
+        <img src="https://www.thecocktaildb.com/images/logo.png" alt="" />
+      </div>
+      <!-- navbar -->
+      <nav>
+        <button id="home">Home</button>
+        <button id="api">API</button>
+        <input type="search" placeholder="Search" />
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- presentazione con drink laterali -->
+      <section id="presentazione">
+        <!-- presentazione left -->
+        <img
+          src="https://www.thecocktaildb.com/images/cocktail_left.png"
+          alt="drink"
+        />
+        <!-- presentazione -->
+        <div id="scrittePresentazione">
+          <h1>Welcome to TheCocktailDB</h1>
+          <p>
+            An open, crowd-sourced database of drinks and cocktails from around
+            the world.
+            <br />
+            We also offer a free cocktail API for anyone wanting to use it.
+          </p>
+          <button id="paypal"><img src="paypal.svg" alt="" /></button>
+          <p>
+            Click button above to upgrade free cocktail API to premium.
+            <br />
+            $3 a month and cancel anytime. Currently 314 supporters.
+          </p>
+        </div>
+        <!-- presentazione right -->
+        <img
+          src="https://www.thecocktaildb.com/images/cocktail_right.png"
+          alt="drink"
+        />
+      </section>
+      <!-- ricera cocktail e totali-->
+      <section id="ricercaCocktail">
+        <hr />
+        <!-- input cerca -->
+        <input type="text" placeholder="Search for a Cocktail.." />
+        <!-- totali -->
+        <div id="totali">
+          <img
+            src="https://www.thecocktaildb.com/images/icons/cocktail-logo.png"
+            alt=""
+          />
+          <p>Total Drinks: 636</p>
+          <img
+            src="https://www.thecocktaildb.com/images/icons/ingredient-logo.png"
+            alt=""
+          />
+          <p>Total Ingredients: 489</p>
+          <img
+            src="https://www.thecocktaildb.com/images/icons/image2.png"
+            alt=""
+          />
+          <p>Drink Images: 636(93cc)</p>
+        </div>
+        <hr />
+      </section>
+      <!-- drink -->
+      <section id="drink">
+        <h2>Popular Drinks</h2>
+        <div id="drinkContainer">
+          <!-- mojito -->
+          <div class="drink" id="mojito">
+            <img
+              src="https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg"
+              alt=""
+            />
+            <p>Mojito</p>
+          </div>
+          <!-- old fashion -->
+          <div class="drink" id="oldFashion">
+            <img
+              src="https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg"
+              alt=""
+            />
+            <p>Old Fashion</p>
+          </div>
+          <!-- long island -->
+          <div class="drink" id="longIsland">
+            <img
+              src="https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg"
+              alt=""
+            />
+            <p>Long Island</p>
+          </div>
+          <!-- negroni -->
+          <div class="drink" id="negroni">
+            <img
+              src="https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg"
+              alt=""
+            />
+            <p>Negroni</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
